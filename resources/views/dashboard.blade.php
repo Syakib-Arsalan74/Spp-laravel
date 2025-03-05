@@ -1,3 +1,7 @@
 <x-layout>
-    <h1>Dashboard page</h1>
+    <x-navbar></x-navbar>
+    <x-sidebar></x-sidebar>
+    <x-content>
+
+    </x-content>
 </x-layout>
