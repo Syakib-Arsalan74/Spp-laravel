@@ -13,7 +13,11 @@ class AuthController extends Controller
      */
     public function index()
     {
-        return view('login');
+        if (Auth::guest()) {
+            return view('login');
+        } else {
+            return view('administrator.petugas');
+        }
     }
 
     public function login(Request $request)

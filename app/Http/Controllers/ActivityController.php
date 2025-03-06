@@ -2,18 +2,17 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Pembayaran;
-use App\Http\Requests\StorePembayaranRequest;
-use App\Http\Requests\UpdatePembayaranRequest;
+use App\Models\Activity;
+use Illuminate\Http\Request;
 
-class PembayaranController extends Controller
+class ActivityController extends Controller
 {
     /**
      * Display a listing of the resource.
      */
     public function index()
     {
-        return view('pembayaran');
+        return view('administrator.logActivity');
     }
 
     /**
@@ -27,7 +26,7 @@ class PembayaranController extends Controller
     /**
      * Store a newly created resource in storage.
      */
-    public function store(StorePembayaranRequest $request)
+    public function store(Request $request)
     {
         //
     }
@@ -35,7 +34,7 @@ class PembayaranController extends Controller
     /**
      * Display the specified resource.
      */
-    public function show(Pembayaran $pembayaran)
+    public function show(Activity $activity)
     {
         //
     }
@@ -43,7 +42,7 @@ class PembayaranController extends Controller
     /**
      * Show the form for editing the specified resource.
      */
-    public function edit(Pembayaran $pembayaran)
+    public function edit(Activity $activity)
     {
         //
     }
@@ -51,7 +50,7 @@ class PembayaranController extends Controller
     /**
      * Update the specified resource in storage.
      */
-    public function update(UpdatePembayaranRequest $request, Pembayaran $pembayaran)
+    public function update(Request $request, Activity $activity)
     {
         //
     }
@@ -59,7 +58,7 @@ class PembayaranController extends Controller
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(Pembayaran $pembayaran)
+    public function destroy(Activity $activity)
     {
         //
     }
